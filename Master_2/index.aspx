@@ -7,7 +7,7 @@
         <nav class="main-navigation navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo-white.png" alt=""></a>
+                <img src="assets/images/white-logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,9 +30,9 @@
                 <div class="col-lg-12">
                     <div class="header-text">
                         <h6>We Provide Everything</h6>
-                        <h2><em>Interior</em> Designer</h2>
+                        <h2><em>HEALTH</em> CHECKS 360</h2>
                         <div class="white-button">
-                            <a href="#">Discover More</a>
+                            <a href="">Discover More</a>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,8 @@
                             <div class="col-lg-3">
                                 <fieldset>
                                     <label for="searchTitle" class="form-label">
-                                    Search Work by Title</label>
-                                    <input type="text" name="searchTitle" class="searchText" placeholder="Type any work title..." autocomplete="on" required>
+                                    Search Report by Name</label>
+                                    <input type="text" name="searchReport" class="searchText" placeholder="Type Report Name" autocomplete="on" required>
                                 </fieldset>
                             </div>
                             <div class="col-lg-3">
@@ -71,10 +71,10 @@
                                     Price Range</label>
                                     <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
                                         <option selected>Choose price</option>
-                                        <option value="$100 - $250">$100 - $250</option>
-                                        <option value="$250 - $500">$250 - $500</option>
-                                        <option value="$500 - $1000">$500 - $1000</option>
-                                        <option value="$1000+">$1000+</option>
+                                        <option value="100 - 250">100 - 250</option>
+                                        <option value="250 - 500">250 - 500</option>
+                                        <option value="500 - 1000">500 - 1000</option>
+                                        <option value="1000+">1000+</option>
                                     </select>
                                 </fieldset>
                             </div>
@@ -94,7 +94,7 @@
                             <div class="col-lg-12">
                                 <fieldset>
                                     <button class="main-button">
-                                        Search Now
+                                        Search Laboratory Now
                                     </button>
                                 </fieldset>
                             </div>
@@ -109,7 +109,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Explore Some Of Our Latest<br><em>Interior Design Work</em>.</h2>
+                        <h2>Explore Some Of Our Latest<br><em>Report Tested</em>.</h2>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -129,7 +129,7 @@
                                             <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z" />
                                         </svg>
                                         January 22, 2022 </span>
-                                        <h6><a href="explore.html">The Waterfront Cafe and Restaurant
+                                        <h6><a href="Explore.aspx">The Waterfront Cafe and Restaurant
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                                             </svg>
@@ -219,13 +219,13 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="section-heading">
-                        <h2>Check Out Whats Trending In<br><em>Our Interior Work</em>.</h2>
+                        <h2>Check Out our<br><em>Testing team</em>.</h2>
                     </div>
                     <div class="left-content">
                         <p>
                             Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit, sed do eismuod larehai med at vero eos et suscipit neque rerum molestias accusamus et iusto odio dignissimos ducimus qui blanditis.</p>
                         <div class="primary-button">
-                            <a href="#">Discover More</a>
+                            <a href="">Discover More</a>
                         </div>
                     </div>
                 </div>
@@ -234,11 +234,11 @@
                         <div class="thumb">
                             <div class="hover-effect">
                                 <div class="inner-content">
-                                    <h4><a href="#">Modernized Interior</a></h4>
-                                    <span>Guest Room Decoration</span>
+                                    <h4><a href="">Our Experts</a></h4>
+                                    <span>Lab Testing</span>
                                 </div>
                             </div>
-                            <img src="assets/images/whats-trending-item-image.jpg" alt="">
+                            <img src="assets/images/Team1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -253,7 +253,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-heading">
-                                    <h2>Don't be Hesitated<br><em>Talk to us</em> now!</h2>
+                                    <h2>Don't be Hesitated to test<br><em>Talk to us</em> now!</h2>
                                 </div>
                             </div>
                             <div class="col-lg-6">

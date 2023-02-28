@@ -57,7 +57,7 @@ https://templatemo.com/tm-572-designer
 
       <nav class="main-navigation navbar navbar-expand-lg navbar-light">
           <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/white-logo.png" alt=""></a>
+            <a class="navbar-brand" href="index.aspx"><img src="assets/images/white-logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -174,7 +174,7 @@ https://templatemo.com/tm-572-designer
                 </div>
                 <div class="col-lg-4">
                     <div class="white-button">
-                        <a href="#">Contact Us Now</a>
+                        <a href="">Contact Us Now</a>
                     </div>
                 </div>
             </div>

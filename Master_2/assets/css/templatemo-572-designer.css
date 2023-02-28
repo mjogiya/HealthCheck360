@@ -324,13 +324,13 @@ button:focus:not(:focus-visible) {
 }
 
 .main-banner {
-  background-color: #333;
-  background-image: url(../images/banner-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 170px 0px 270px 0px;
-  text-align: center;
+    background-color: #333;
+    background-image: url(../images/Home_wallpaper1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 170px 0px 270px 0px;
+    text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -600,15 +600,16 @@ section.whats-trending .right-image .thumb img {
 }
 
 section.whats-trending .right-image::after {
-  width: 440px;
-  height: 300px;
-  right: -440px;
+  width: 450px;
+  height: 320px;
+  right: -350px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   position: absolute;
-  background: url(../images/whats-trending-right-image.png);
+  /*background: url(../images/Team4.jpg);*/
   content: '';
+  /*background-repeat:no-repeat;*/
 }
 
 section.contact-us {

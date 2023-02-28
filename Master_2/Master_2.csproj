@@ -69,6 +69,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="about.html" />
+    <Content Include="App_Data\Health.mdf" />
+    <Content Include="App_Data\Health_log.ldf">
+      <DependentUpon>Health.mdf</DependentUpon>
+    </Content>
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\flex-slider.css" />
     <Content Include="assets\css\fontawesome.css" />
@@ -129,6 +133,7 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -192,6 +197,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Connection\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
