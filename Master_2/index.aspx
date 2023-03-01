@@ -249,7 +249,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 left-form">
-                    <form id="contact" action="" method="post">
+                    <form id="contact" method="post" runat="server">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-heading">
@@ -257,24 +257,30 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <input name="name" type="text" id="name" placeholder="First Name*" required="">
+                                <asp:TextBox ID="name" runat="server" placeholder="First Name" required=""></asp:TextBox>
+                                <%--<input name="name" type="text" id="name" placeholder="First Name*" required="">--%>
                             </div>
                             <div class="col-lg-6">
-                                <input name="last-name" type="text" id="last-name" placeholder="Last Name*" required="">
+                                <asp:TextBox ID="lastname" runat="server" placeholder="Last Name" required=""></asp:TextBox>
+                                <%--<input name="last-name" type="text" id="last-name" placeholder="Last Name*" required="">--%>
                             </div>
                             <div class="col-lg-6">
-                                <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                                <asp:TextBox ID="email" runat="server" placeholder="Your Email" required=""></asp:TextBox>
+                                <%--<input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">--%>
                             </div>
                             <div class="col-lg-6">
-                                <input name="subject" type="text" id="subject" placeholder="Subject*" required="">
+                                <asp:TextBox ID="subject" runat="server" placeholder="Subject" required=""></asp:TextBox>
+                                <%--<input name="subject" type="text" id="subject" placeholder="Subject*" required="">--%>
                             </div>
                             <div class="col-lg-12">
-                                <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                <asp:TextBox ID="message" runat="server" placeholder="Message" required=""></asp:TextBox>
+                                <%--<textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>--%>
                             </div>
                             <div class="col-lg-12">
-                                <button type="submit" id="form-submit" class="main-button ">
+                                <asp:Button ID="Button1" runat="server" Text="Send Message" CssClass="main-button" OnClick="Button1_Click"  />
+                                <%--<button type="submit" id="form-submit" class="main-button ">
                                     Send Message
-                                </button>
+                                </button>--%>
                             </div>
                         </div>
                     </form>

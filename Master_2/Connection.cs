@@ -10,7 +10,7 @@ namespace Master_2
 {
     public class Connection
     {
-        String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\Healthcheck\Master_2\App_Data\Health.mdf;Integrated Security=True";
+        String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=E:\asp\Master_2\App_Data\Health.mdf;Integrated Security=True";
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter da;
@@ -22,10 +22,11 @@ namespace Master_2
             con.Open();
         }
 
-        void insert(String fname, String lname, String email, String subject, String message)
+        public void insert(String fname, String lname, String email, String subject, String message)
         {
             getcon();
-            cmd = new SqlCommand("insert into contact(fname, lname, email, subject, message) values() ",con);
+            cmd = new SqlCommand("insert into contact(fname, lname, email, subject, message) values('"+fname+ "','"+lname+ "','"+email+ "','"+subject+ "','"+message+"')", con);
+            cmd.ExecuteNonQuery();
         }
     }
 }

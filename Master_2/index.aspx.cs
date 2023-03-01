@@ -14,6 +14,10 @@ namespace Master_2
 
         }
 
-       
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Connection cs = new Connection();
+            cs.insert(name.Text, lastname.Text, email.Text, subject.Text, message.Text);
+        }
     }
 }
