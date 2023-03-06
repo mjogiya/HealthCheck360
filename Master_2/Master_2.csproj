@@ -116,6 +116,26 @@
     <Content Include="index.html" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
+    <Content Include="Sign-in-up\css\main.css" />
+    <Content Include="Sign-in-up\css\main.min.css" />
+    <Content Include="Sign-in-up\index.html" />
+    <Content Include="Sign-in-up\js\global.js" />
+    <Content Include="Sign-in-up\Login.aspx" />
+    <Content Include="Sign-in-up\Register.aspx" />
+    <Content Include="Sign-in-up\vendor\datepicker\daterangepicker.css" />
+    <Content Include="Sign-in-up\vendor\datepicker\daterangepicker.js" />
+    <Content Include="Sign-in-up\vendor\datepicker\moment.min.js" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="Sign-in-up\vendor\jquery\jquery.js" />
+    <Content Include="Sign-in-up\vendor\jquery\jquery.min.js" />
+    <Content Include="Sign-in-up\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="Sign-in-up\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Sign-in-up\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Sign-in-up\vendor\select2\select2.min.css" />
+    <Content Include="Sign-in-up\vendor\select2\select2.min.js" />
     <Content Include="Trending.aspx" />
     <Content Include="trending.html" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
@@ -178,6 +198,20 @@
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Sign-in-up\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sign-in-up\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sign-in-up\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sign-in-up\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Trending.aspx.cs">
       <DependentUpon>Trending.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -199,6 +233,15 @@
     <None Include="packages.config" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Sign-in-up\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="Sign-in-up\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Sign-in-up\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Sign-in-up\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Sign-in-up\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

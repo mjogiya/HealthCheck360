@@ -9,6 +9,7 @@ namespace Master_2
 {
     public partial class index1 : System.Web.UI.Page
     {
+        Connection cs = new Connection();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -16,7 +17,7 @@ namespace Master_2
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Connection cs = new Connection();
+            
             cs.insert(name.Text, lastname.Text, email.Text, subject.Text, message.Text);
         }
     }

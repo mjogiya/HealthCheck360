@@ -15,13 +15,31 @@ namespace Master_2
     {
 
         /// <summary>
-        /// contact control.
+        /// searchReport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm contact;
+        protected global::System.Web.UI.WebControls.TextBox searchReport;
+
+        /// <summary>
+        /// chooseCategory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList chooseCategory;
+
+        /// <summary>
+        /// choosePrice control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList choosePrice;
 
         /// <summary>
         /// name control.

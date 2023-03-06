@@ -3,6 +3,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
+    <form runat="server">
     <header id="#top">
         <nav class="main-navigation navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -39,43 +40,48 @@
             </div>
         </div>
     </div>
-    <div class="search-form">
+    <div class="searchForm">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <form id="search-form" name="gs" method="submit" role="search" action="#">
+                    <div class="searchFormTag"   >
                         <div class="row">
                             <div class="col-lg-3">
                                 <fieldset>
                                     <label for="searchTitle" class="form-label">
                                     Search Report by Name</label>
-                                    <input type="text" name="searchReport" class="searchText" placeholder="Type Report Name" autocomplete="on" required>
+                                  <asp:TextBox ID="searchReport" CssClass="searchText" placeholder="Type Report Name" runat="server"></asp:TextBox>
                                 </fieldset>
                             </div>
                             <div class="col-lg-3">
                                 <fieldset>
                                     <label for="chooseCategory" class="form-label">
                                     Choose Category</label>
-                                    <select name="Category" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
+                                    <asp:DropDownList ID="chooseCategory" CssClass="form-select" runat="server" >
+                                        <asp:ListItem>Choose Category</asp:ListItem>
+                                        <asp:ListItem>Blood Report</asp:ListItem>
+                                        <asp:ListItem></asp:ListItem>
+                                    </asp:DropDownList>
+                                   <%-- <select name="Category" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
                                         <option selected>Choose category</option>
                                         <option type="checkbox" name="option1" value="Interior Design">Interior Design</option>
                                         <option value="Exterior Design">Exterior Design</option>
                                         <option value="New Ideas">New Ideas</option>
                                         <option value="Trendy Design">Trendy Design</option>
-                                    </select>
+                                    </select>--%>
                                 </fieldset>
                             </div>
                             <div class="col-lg-3">
                                 <fieldset>
                                     <label for="chooseprice" class="form-label">
                                     Price Range</label>
-                                    <select name="Price" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                                        <option selected>Choose price</option>
-                                        <option value="100 - 250">100 - 250</option>
-                                        <option value="250 - 500">250 - 500</option>
-                                        <option value="500 - 1000">500 - 1000</option>
-                                        <option value="1000+">1000+</option>
-                                    </select>
+                                    <asp:DropDownList ID="choosePrice" CssClass="form-select" runat="server" >
+                                        <asp:ListItem>100 -250</asp:ListItem>
+                                        <asp:ListItem>250 - 500</asp:ListItem>
+                                        <asp:ListItem>500 - 1000</asp:ListItem>
+                                        <asp:ListItem>1000+</asp:ListItem>
+                                    </asp:DropDownList>
+                                    
                                 </fieldset>
                             </div>
                             <div class="col-lg-3">
@@ -99,7 +105,7 @@
                                 </fieldset>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -249,7 +255,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 left-form">
-                    <form id="contact" method="post" runat="server">
+                    <form id="contact" method="post" >
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-heading">
@@ -258,23 +264,23 @@
                             </div>
                             <div class="col-lg-6">
                                 <asp:TextBox ID="name" runat="server" placeholder="First Name" required=""></asp:TextBox>
-                                <%--<input name="name" type="text" id="name" placeholder="First Name*" required="">--%>
+                               
                             </div>
                             <div class="col-lg-6">
                                 <asp:TextBox ID="lastname" runat="server" placeholder="Last Name" required=""></asp:TextBox>
-                                <%--<input name="last-name" type="text" id="last-name" placeholder="Last Name*" required="">--%>
+                             
                             </div>
                             <div class="col-lg-6">
                                 <asp:TextBox ID="email" runat="server" placeholder="Your Email" required=""></asp:TextBox>
-                                <%--<input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">--%>
+                               
                             </div>
                             <div class="col-lg-6">
                                 <asp:TextBox ID="subject" runat="server" placeholder="Subject" required=""></asp:TextBox>
-                                <%--<input name="subject" type="text" id="subject" placeholder="Subject*" required="">--%>
+                              
                             </div>
                             <div class="col-lg-12">
                                 <asp:TextBox ID="message" runat="server" placeholder="Message" required=""></asp:TextBox>
-                                <%--<textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>--%>
+                                
                             </div>
                             <div class="col-lg-12">
                                 <asp:Button ID="Button1" runat="server" Text="Send Message" CssClass="main-button" OnClick="Button1_Click"  />
@@ -296,6 +302,7 @@
             </div>
         </div>
     </section>
+        </form>
 </asp:Content>
 
 
