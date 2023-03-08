@@ -34,5 +34,22 @@ namespace Master_2
             cmd = new SqlCommand("insert into Hospital(name, companyName, email, phone, typeOfHospital, address, password) values('"+name+ "', '"+company+ "', '"+email+ "','"+phone+ "', '"+typeHos+ "', '"+address+"', '"+pwd+"')", con);
             cmd.ExecuteNonQuery();
         }
+        public String login(String email, String phone, String password)
+        {
+            getcon();
+            da = new SqlDataAdapter("SELECT * from Hospital where email='" + email + "' AND phone='"+phone+"' AND password='" + password + "';", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            int i = ds.Tables[0].Rows.Count;
+            if (i == 1)
+            {
+                return "login";
+            }
+            else
+            {
+                return "login falied";
+            }
+
+        }
     }
 }

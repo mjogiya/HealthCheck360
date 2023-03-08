@@ -35,7 +35,7 @@
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Hospital Registration Form</h2>
+                    <h2 class="title">Hospital Login</h2>
                 </div>
                 <div class="card-body">
                     <form method="POST">
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <div>
-                            <asp:Button ID="register" runat="server" Text="Register" CssClass="btn btn--radius-2 btn--red" />
+                            <asp:Button ID="Login" runat="server" Text="Login" CssClass="btn btn--radius-2 btn--red" OnClick="Login_Click" />
                         </div>
                     </form>
                 </div>

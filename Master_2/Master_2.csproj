@@ -69,6 +69,24 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="about.html" />
+    <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\css\main.css" />
+    <Content Include="Admin\css\main.min.css" />
+    <Content Include="Admin\js\global.js" />
+    <Content Include="Admin\vendor\datepicker\daterangepicker.css" />
+    <Content Include="Admin\vendor\datepicker\daterangepicker.js" />
+    <Content Include="Admin\vendor\datepicker\moment.min.js" />
+    <Content Include="Admin\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="Admin\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="Admin\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="Admin\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="Admin\vendor\jquery\jquery.js" />
+    <Content Include="Admin\vendor\jquery\jquery.min.js" />
+    <Content Include="Admin\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="Admin\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Admin\vendor\select2\select2.min.css" />
+    <Content Include="Admin\vendor\select2\select2.min.js" />
     <Content Include="App_Data\Health.mdf" />
     <Content Include="App_Data\Health_log.ldf">
       <DependentUpon>Health.mdf</DependentUpon>
@@ -118,7 +136,6 @@
     <Content Include="Register.aspx" />
     <Content Include="Sign-in-up\css\main.css" />
     <Content Include="Sign-in-up\css\main.min.css" />
-    <Content Include="Sign-in-up\index.html" />
     <Content Include="Sign-in-up\js\global.js" />
     <Content Include="Sign-in-up\Login.aspx" />
     <Content Include="Sign-in-up\Register.aspx" />
@@ -154,6 +171,14 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminLogin.aspx.designer.cs">
+      <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Connect.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -230,6 +255,15 @@
     <Content Include="assets\webfonts\fa-solid-900.woff2" />
     <Content Include="assets\webfonts\fa-v4compatibility.ttf" />
     <Content Include="assets\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="Admin\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
     <None Include="packages.config" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />

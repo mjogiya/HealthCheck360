@@ -51,12 +51,12 @@ namespace Master_2.Sign_in_up
         protected global::System.Web.UI.WebControls.TextBox pwd;
 
         /// <summary>
-        /// register control.
+        /// Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button register;
+        protected global::System.Web.UI.WebControls.Button Login;
     }
 }
