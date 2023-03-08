@@ -36,7 +36,7 @@
                 <div class="col-lg-12">
                     <div class="header-text">
                         <h6>We Provide Everything</h6>
-                        <h2><em>HEALTH</em> CHECKS 360</h2>
+                        <h2><em>HEALTH</em> CHECK 360</h2>
                         <div class="white-button">
                             <a href="">Discover More</a>
                         </div>

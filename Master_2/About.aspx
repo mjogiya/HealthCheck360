@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="header-text">
-                        <h2><em>About</em> Designer</h2>
+                        <h2><em>About</em> HealthCheck360</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod keoi tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-heading">
-                        <h2>A Company Who Specializes<br><em>In Interior Design</em>.</h2>
+                        <h2>A Company Who Specializes<br><em>In Report Testing</em>.</h2>
                     </div>
                     <div class="left-image">
                         <img src="assets/images/interior-design-left-image.jpg" alt="">
@@ -84,12 +84,12 @@
                             <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What is Interior Design?
+                                    What is Report Testing?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <strong>sed do eiusmod tempor incididunt ut labore</strong> et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ai accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Medical laboratory scientists perform complex tests on patient samples using sophisticated equipment like microscopes. The data they find plays an important role in identifying and treating cancer, heart disease, diabetes, and other medical conditions. <strong>sed do eiusmod tempor incididunt ut labore</strong> et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ai accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                 </div>
                             </div>
                             </div>
