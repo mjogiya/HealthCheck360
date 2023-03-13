@@ -55,14 +55,14 @@
                         <div class="row">
                             <div class="col-lg-2">
                                 <div class="info-item">
-                                    <h6>Architect:</h6>
-                                    <span>Catherine Rose</span>
+                                    <h6>Tester:</h6>
+                                    <span>Mayur Jogiya</span>
                                 </div>
                             </div>
                             <div class="col-lg-2">
                                 <div class="info-item">
                                     <h6>Client:</h6>
-                                    <span>TemplateMo</span>
+                                    <span>Maruti Hospital</span>
                                 </div>
                             </div>
                             <div class="col-lg-2">
@@ -73,8 +73,8 @@
                             </div>
                             <div class="col-lg-2">
                                 <div class="info-item">
-                                    <h6>Project Type:</h6>
-                                    <span>Interior Design</span>
+                                    <h6>Report Type:</h6>
+                                    <span>Blood Report</span>
                                 </div>
                             </div>
                             <div class="col-lg-2">
