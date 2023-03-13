@@ -22,9 +22,9 @@ namespace Master_2.Admin
             logInfo = adminCon.login(email.Text, phone.Text, pwd.Text);
             if (logInfo == "login")
             {
-//                Session["user"] = email.Text;
+                Session["admin"] = email.Text;
                 Response.Write("<script>alert('Success');</script>");
-                //Response.Redirect("../index.aspx");
+                Response.Redirect("./indexAdmin.aspx");
             }
             else
             {

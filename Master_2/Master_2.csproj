@@ -70,9 +70,50 @@
     <Content Include="About.aspx" />
     <Content Include="about.html" />
     <Content Include="Admin\AdminLogin.aspx" />
+    <Content Include="Admin\assets\css\animate.css" />
+    <Content Include="Admin\assets\css\flex-slider.css" />
+    <Content Include="Admin\assets\css\fontawesome.css" />
+    <Content Include="Admin\assets\css\owl.css" />
+    <Content Include="Admin\assets\css\templatemo-572-designer.css" />
+    <Content Include="Admin\assets\images\banner-bg.jpg" />
+    <Content Include="Admin\assets\images\contact-us-bg.jpg" />
+    <Content Include="Admin\assets\images\explore-item-01.jpg" />
+    <Content Include="Admin\assets\images\explore-item-02.jpg" />
+    <Content Include="Admin\assets\images\explore-item-03.jpg" />
+    <Content Include="Admin\assets\images\explore-work-left-image.jpg" />
+    <Content Include="Admin\assets\images\footer-logo.png" />
+    <Content Include="Admin\assets\images\interior-design-left-image.jpg" />
+    <Content Include="Admin\assets\images\page-banner-bg.jpg" />
+    <Content Include="Admin\assets\images\pagination-left-image.jpg" />
+    <Content Include="Admin\assets\images\pagination-right-image.jpg" />
+    <Content Include="Admin\assets\images\testimonial-author-01.jpg" />
+    <Content Include="Admin\assets\images\testimonial-bg.png" />
+    <Content Include="Admin\assets\images\trending-item-01.jpg" />
+    <Content Include="Admin\assets\images\trending-item-02.jpg" />
+    <Content Include="Admin\assets\images\trending-item-03.jpg" />
+    <Content Include="Admin\assets\images\trending-item-04.jpg" />
+    <Content Include="Admin\assets\images\trending-item-05.jpg" />
+    <Content Include="Admin\assets\images\trending-item-06.jpg" />
+    <Content Include="Admin\assets\images\trending-item-07.jpg" />
+    <Content Include="Admin\assets\images\trending-item-08.jpg" />
+    <Content Include="Admin\assets\images\whats-trending-item-image.jpg" />
+    <Content Include="Admin\assets\images\whats-trending-right-image.png" />
+    <Content Include="Admin\assets\images\white-logo.png" />
+    <Content Include="Admin\assets\js\custom.js" />
+    <Content Include="Admin\assets\js\isotope.js" />
+    <Content Include="Admin\assets\js\isotope.min.js" />
+    <Content Include="Admin\assets\js\owl-carousel.js" />
+    <Content Include="Admin\assets\js\popup.js" />
+    <Content Include="Admin\assets\js\tabs.js" />
     <Content Include="Admin\css\main.css" />
     <Content Include="Admin\css\main.min.css" />
+    <Content Include="Admin\Hospitals.aspx" />
+    <Content Include="Admin\indexAdmin.aspx" />
     <Content Include="Admin\js\global.js" />
+    <Content Include="Admin\NewReport.aspx" />
+    <Content Include="Admin\Reports.aspx" />
+    <Content Include="Admin\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\vendor\bootstrap\js\bootstrap.min.js" />
     <Content Include="Admin\vendor\datepicker\daterangepicker.css" />
     <Content Include="Admin\vendor\datepicker\daterangepicker.js" />
     <Content Include="Admin\vendor\datepicker\moment.min.js" />
@@ -82,6 +123,8 @@
     <Content Include="Admin\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
     <Content Include="Admin\vendor\jquery\jquery.js" />
     <Content Include="Admin\vendor\jquery\jquery.min.js" />
+    <Content Include="Admin\vendor\jquery\jquery.slim.js" />
+    <Content Include="Admin\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Admin\vendor\mdi-font\css\material-design-iconic-font.css" />
     <Content Include="Admin\vendor\mdi-font\css\material-design-iconic-font.min.css" />
     <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
@@ -179,6 +222,34 @@
       <DependentUpon>AdminLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Connect.cs" />
+    <Compile Include="Admin\Hospitals.aspx.cs">
+      <DependentUpon>Hospitals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Hospitals.aspx.designer.cs">
+      <DependentUpon>Hospitals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\indexAdmin.aspx.cs">
+      <DependentUpon>indexAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\indexAdmin.aspx.designer.cs">
+      <DependentUpon>indexAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\NewReport.aspx.cs">
+      <DependentUpon>NewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\NewReport.aspx.designer.cs">
+      <DependentUpon>NewReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -264,6 +335,16 @@
     <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
     <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
     <Content Include="Admin\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Admin\vendor\jquery\jquery.min.map" />
+    <Content Include="Admin\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Admin\assets\webfonts\fa-brands-400.ttf" />
+    <Content Include="Admin\assets\webfonts\fa-brands-400.woff2" />
+    <Content Include="Admin\assets\webfonts\fa-regular-400.ttf" />
+    <Content Include="Admin\assets\webfonts\fa-regular-400.woff2" />
+    <Content Include="Admin\assets\webfonts\fa-solid-900.ttf" />
+    <Content Include="Admin\assets\webfonts\fa-solid-900.woff2" />
+    <Content Include="Admin\assets\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Admin\assets\webfonts\fa-v4compatibility.woff2" />
     <None Include="packages.config" />
     <Content Include="vendor\jquery\jquery.min.map" />
     <Content Include="vendor\jquery\jquery.slim.min.map" />

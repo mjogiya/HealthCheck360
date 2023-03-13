@@ -67,13 +67,7 @@
                                         <asp:ListItem>Blood Report</asp:ListItem>
                                         <asp:ListItem></asp:ListItem>
                                     </asp:DropDownList>
-                                   <%-- <select name="Category" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                                        <option selected>Choose category</option>
-                                        <option type="checkbox" name="option1" value="Interior Design">Interior Design</option>
-                                        <option value="Exterior Design">Exterior Design</option>
-                                        <option value="New Ideas">New Ideas</option>
-                                        <option value="Trendy Design">Trendy Design</option>
-                                    </select>--%>
+                                   
                                 </fieldset>
                             </div>
                             <div class="col-lg-3">
@@ -93,20 +87,19 @@
                                 <fieldset>
                                     <label for="chooseplan" class="form-label">
                                     Pick a Plan</label>
-                                    <select name="Plan" class="form-select" aria-label="Default select example" id="chooseCategory" onchange="this.form.click()">
-                                        <option selected>Choose plan</option>
-                                        <option value="Standard">Standard</option>
-                                        <option value="Professional">Professional</option>
-                                        <option value="Golden">Golden</option>
-                                        <option value="Premium">Premium</option>
-                                    </select>
+                                    <asp:DropDownList ID="chooseCategor" CssClass="form-select" runat="server" >
+                                        <asp:ListItem>Blood Report</asp:ListItem>
+                                        <asp:ListItem>other report</asp:ListItem>
+                                        <asp:ListItem>other report1</asp:ListItem>
+                                        <asp:ListItem>other report2</asp:ListItem>
+                                    </asp:DropDownList>
+                                    
                                 </fieldset>
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <button class="main-button">
-                                        Search Laboratory Now
-                                    </button>
+                                    <asp:Button ID="SearchReportbtn" runat="server" CssClass="main-button" Text="Search Report Now" />
+                                    
                                 </fieldset>
                             </div>
                         </div>

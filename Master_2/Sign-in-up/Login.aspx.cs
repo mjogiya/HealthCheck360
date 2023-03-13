@@ -18,7 +18,7 @@ namespace Master_2.Sign_in_up
 
         protected void Login_Click(object sender, EventArgs e)
         {
-           logInfo = log.login(email.Text, phone.Text, pwd.Text);
+            logInfo = log.login(email.Text, phone.Text, pwd.Text);
             if(logInfo == "login")
             {
                 Session["user"] = email.Text;

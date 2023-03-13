@@ -52,7 +52,7 @@ p {
   color: #7a7a7a;
 }
 
-button.main-button {
+.main-button {
   font-size: 14px;
   text-transform: capitalize;
   font-weight: 400;
@@ -67,7 +67,7 @@ button.main-button {
   transition: all .5s;
 }
 
-button.main-button:hover {
+.main-button:hover {
   background-color: #2a2a2a;
 }
 
@@ -402,7 +402,7 @@ button:focus:not(:focus-visible) {
   margin-bottom: 30px;
 }
 
-.searchForm .searchFormTag button.main-button {
+.searchForm .searchFormTag .main-button {
   width: 100%;
 }
 
@@ -690,7 +690,7 @@ section.contact-us form textarea {
   margin-bottom: 15px;
 }
 
-section.contact-us form button.main-button {
+section.contact-us form .main-button {
   width: 100%;
 }
 
@@ -1515,7 +1515,7 @@ section.contact-us-page .contact-page-form form textarea {
   margin-bottom: 15px;
 }
 
-section.contact-us-page .contact-page-form form button.main-button {
+section.contact-us-page .contact-page-form form .main-button {
   width: 100%;
 }
 
