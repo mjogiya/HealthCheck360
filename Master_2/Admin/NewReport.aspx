@@ -21,6 +21,19 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
 </head>
 <body>
    
@@ -47,24 +60,69 @@
       </rect>
     </svg>
   </div>
-     <% if (Session["admin"] != null) { %>
+     <%--<% if (Session["admin"] != null) { %>--%>
     <form id="form2" runat="server">
         <div>
-            <header id="#top">
-        <nav class="main-navigation navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                <img src="assets/images/white-logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    
-                    <h1>Add New report</h1>
+            <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Add New Report</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        
+                        <div class="form-row">
+                            <div class="name">Report Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <asp:TextBox ID="repName" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Report Price</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <asp:TextBox ID="repPrice" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                       
+                         <div class="form-row">
+                            <div class="name">Report Type</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <asp:DropDownList ID="repType" runat="server" CssClass="input--style-5">
+                                        <asp:ListItem>Blood Report</asp:ListItem>
+                                        <asp:ListItem>Pathology</asp:ListItem>
+                                        <asp:ListItem>Mammography</asp:ListItem>
+                                        <asp:ListItem>Cardiology</asp:ListItem>
+                                    </asp:DropDownList>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Report Type</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="input--style-5">
+                                        <asp:ListItem>Blood Report</asp:ListItem>
+                                        <asp:ListItem>Pathology</asp:ListItem>
+                                        <asp:ListItem>Mammography</asp:ListItem>
+                                        <asp:ListItem>Cardiology</asp:ListItem>
+                                    </asp:DropDownList>
+                                    </div>
+                            </div>
+                        </div>
+                        <div>
+                            <asp:Button ID="Login" runat="server" Text="Add Report" CssClass="btn btn--radius-2 btn--red"/>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </div>
         </div>
     </form>
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -76,6 +134,15 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+            <!-- Jquery JS-->
+    
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
   <script>
     setTimeout(function(){
         $('.loader').fadeToggle();
@@ -86,9 +153,9 @@
         return false;
     });
   </script>
-     <%} else { %>
+    <%-- <%} else { %>
           Response.Redirect("./AdminLogin.aspx");   
-     <%} %>
+     <%} %>--%>
 
         </div>
    

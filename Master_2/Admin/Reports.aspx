@@ -60,9 +60,9 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link active" href="indexAdmin.aspx">Homepage</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="indexAdmin.aspx">Homepage</a> </li>
                         <li class="nav-item"><a class="nav-link" href="Hospitals.aspx">Hospitals</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="Reports.aspx">Reports</a> </li>
+                        <li class="nav-item"><a class="nav-link active" href="Reports.aspx">Reports</a> </li>
                         <li class="nav-item"><a class="nav-link" href="NewReport.aspx">Add New Report</a> </li>
                        
                     </ul>

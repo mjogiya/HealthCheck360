@@ -9,7 +9,7 @@ namespace Master_2.Admin
 {
     public class Connect
     {
-        String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ashis\Desktop\ASP_project\Master_2\App_Data\Health.mdf;Integrated Security=True";
+        String s = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Health.mdf;Integrated Security=True";
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter da;
