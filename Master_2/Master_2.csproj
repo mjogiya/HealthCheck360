@@ -168,6 +168,7 @@
     <Content Include="assets\js\owl-carousel.js" />
     <Content Include="assets\js\popup.js" />
     <Content Include="assets\js\tabs.js" />
+    <Content Include="BookReport.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Explore.aspx" />
     <Content Include="index.aspx" />
@@ -242,6 +243,13 @@
     </Compile>
     <Compile Include="Admin\Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BookReport.aspx.cs">
+      <DependentUpon>BookReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookReport.aspx.designer.cs">
+      <DependentUpon>BookReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connection.cs" />
     <Compile Include="Contact.aspx.cs">

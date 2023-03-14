@@ -15,7 +15,8 @@ namespace Master_2
         SqlCommand cmd;
         SqlDataAdapter da;
         DataSet ds;
-        
+        String HospitalEmail;
+       
         void getcon()
         {
             con = new SqlConnection(s);
@@ -43,6 +44,7 @@ namespace Master_2
             int i = ds.Tables[0].Rows.Count;
             if (i == 1)
             {
+                HospitalEmail = email;
                 return "login";
             }
             else
@@ -50,6 +52,22 @@ namespace Master_2
                 return "login falied";
             }
 
+        }
+        public void addTestReport(String pName, String pAge, String pGender, String pWeight, String pHeight, String pMobile, String pEmail, String expectDate, String reportID, String reportName, String reportType, String reportPrice, String hospitalID, String hName, String hEmail, String hAddress)
+        {
+            getcon();
+            cmd = new SqlCommand("INSERT INTO tests (pName, pAge, pGender, pWeight, pHeight, pMobile, pEmail, Date, expectDate, reportID, reportName, reportType, reportPrice, hospitalID, hName, hEmail, hAddress, reportStatus)" +
+                " values('"+pName+ "', '"+pAge+ "','"+pGender+ "','"+pWeight+ "','"+pHeight+ "','"+pMobile+ "', '"+pEmail+ "', '"+DateTime.Now+ "', '"+expectDate+ "', '"+reportID+ "', '"+reportName+ "', '"+reportType+ "', '"+reportPrice+ "', '"+hospitalID+ "', '"+hName+ "', '"+hEmail+"', '" + hAddress+ "', 'Pending Collect'");
+            cmd.ExecuteNonQuery();
+        }
+        public DataSet findHospital()
+        {
+            getcon();
+            da = new SqlDataAdapter("SELECT * from Hospital where email='" + HospitalEmail + "'", con);
+            ds = new DataSet();
+            da.Fill(ds);
+
+            return ds;
         }
     }
 }

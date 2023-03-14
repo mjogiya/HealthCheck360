@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Master_2.Admin {
-    
-    
-    public partial class NewReport {
-        
+namespace Master_2.Admin
+{
+
+
+    public partial class NewReport
+    {
+
         /// <summary>
         /// form2 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace Master_2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form2;
-        
+
         /// <summary>
         /// repName control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace Master_2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox repName;
-        
+
         /// <summary>
         /// repPrice control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace Master_2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox repPrice;
-        
+
         /// <summary>
         /// repType control.
         /// </summary>
@@ -47,23 +49,14 @@ namespace Master_2.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList repType;
-        
+
         /// <summary>
-        /// DropDownList1 control.
+        /// AddReport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
-        /// <summary>
-        /// Login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Login;
+        protected global::System.Web.UI.WebControls.Button AddReport;
     }
 }

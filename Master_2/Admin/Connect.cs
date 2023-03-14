@@ -36,5 +36,11 @@ namespace Master_2.Admin
             }
 
         }
+        public void addReport(String name, String price, String category)
+        {
+            getcon();
+            cmd = new SqlCommand("insert into report(name, price, category) values('" + name + "','" + price + "','" + category + "')", con);
+            cmd.ExecuteNonQuery();
+        }
     }
 }

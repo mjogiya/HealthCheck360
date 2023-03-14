@@ -94,7 +94,6 @@
                             <div class="value">
                                 <div class="input-group">
                                     <asp:DropDownList ID="repType" runat="server" CssClass="input--style-5">
-                                        <asp:ListItem>Blood Report</asp:ListItem>
                                         <asp:ListItem>Pathology</asp:ListItem>
                                         <asp:ListItem>Mammography</asp:ListItem>
                                         <asp:ListItem>Cardiology</asp:ListItem>
@@ -102,21 +101,9 @@
                                     </div>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="name">Report Type</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <asp:DropDownList ID="DropDownList1" runat="server" CssClass="input--style-5">
-                                        <asp:ListItem>Blood Report</asp:ListItem>
-                                        <asp:ListItem>Pathology</asp:ListItem>
-                                        <asp:ListItem>Mammography</asp:ListItem>
-                                        <asp:ListItem>Cardiology</asp:ListItem>
-                                    </asp:DropDownList>
-                                    </div>
-                            </div>
-                        </div>
+                        
                         <div>
-                            <asp:Button ID="Login" runat="server" Text="Add Report" CssClass="btn btn--radius-2 btn--red"/>
+                            <asp:Button ID="AddReport" runat="server" Text="Add Report" CssClass="btn btn--radius-2 btn--red" OnClick="AddReport_Click"/>
                         </div>
                     </form>
                 </div>
