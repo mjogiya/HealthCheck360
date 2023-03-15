@@ -15,7 +15,7 @@ namespace Master_2
         SqlCommand cmd;
         SqlDataAdapter da;
         DataSet ds;
-        String HospitalEmail;
+       
        
         void getcon()
         {
@@ -44,7 +44,7 @@ namespace Master_2
             int i = ds.Tables[0].Rows.Count;
             if (i == 1)
             {
-                HospitalEmail = email;
+                
                 return "login";
             }
             else
@@ -60,10 +60,10 @@ namespace Master_2
                 " values('"+pName+ "', '"+pAge+ "','"+pGender+ "','"+pWeight+ "','"+pHeight+ "','"+pMobile+ "', '"+pEmail+ "', '"+DateTime.Now+ "', '"+expectDate+ "', '"+reportID+ "', '"+reportName+ "', '"+reportType+ "', '"+reportPrice+ "', '"+hospitalID+ "', '"+hName+ "', '"+hEmail+"', '" + hAddress+ "', 'Pending Collect'");
             cmd.ExecuteNonQuery();
         }
-        public DataSet findHospital()
+        public DataSet findHospital(String email)
         {
             getcon();
-            da = new SqlDataAdapter("SELECT * from Hospital where email='" + HospitalEmail + "'", con);
+            da = new SqlDataAdapter("SELECT * from Hospital where email='" + email + "'", con);
             ds = new DataSet();
             da.Fill(ds);
 

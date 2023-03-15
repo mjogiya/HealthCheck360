@@ -13,17 +13,14 @@ namespace Master_2
         Connection c = new Connection();
         String reportID, hospitalID;
         DataSet HospitalData;
-        String name;
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-            HospitalData =  c.findHospital();
+            HospitalData =  c.findHospital(Session["user"].ToString());
 
-            name = HospitalData.Tables["0"].Rows[0]["name"].ToString();
-            //HData[1] = ds.Tables[0].Rows[0]["name"].ToString();
-            //HData[2] = ds.Tables[0].Rows[0]["email"].ToString();
-            //HData[3] = ds.Tables[0].Rows[0]["address"].ToString();
-            Response.Write(name);
+            hName.Text = HospitalData.Tables[0].Rows[0]["name"].ToString();
+            hEmail.Text = HospitalData.Tables[0].Rows[0]["email"].ToString();
+            hAddress.Text = HospitalData.Tables[0].Rows[0]["address"].ToString();
         }
 
         protected void bookReport_Click(object sender, EventArgs e)
