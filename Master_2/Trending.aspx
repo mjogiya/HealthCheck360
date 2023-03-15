@@ -46,6 +46,9 @@
             <div class="col-lg-12">
                 <div class="row grid">
                     <div class="grid-sizer"></div>
+
+                    
+
                     <div class="grid-item">
                         <div class="trending-item">
                             <div class="thumb">
@@ -62,6 +65,9 @@
                             </div>
                         </div>
                     </div>
+
+
+
                     <div class="grid-item">
                         <div class="trending-item">
                             <div class="thumb">
@@ -78,6 +84,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="grid-item">
                         <div class="trending-item">
                             <div class="thumb">
@@ -94,6 +102,8 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="grid-item">
                         <div class="trending-item">
                             <div class="thumb">

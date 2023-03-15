@@ -69,5 +69,13 @@ namespace Master_2
 
             return ds;
         }
+        public DataSet ShowReports()
+        {
+            getcon();
+            da = new SqlDataAdapter("SELECT * FROM report", con);
+            ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
     }
 }
