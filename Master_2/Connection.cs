@@ -57,7 +57,7 @@ namespace Master_2
         {
             getcon();
             cmd = new SqlCommand("INSERT INTO tests (pName, pAge, pGender, pWeight, pHeight, pMobile, pEmail, Date, expectDate, reportID, reportName, reportType, reportPrice, hospitalID, hName, hEmail, hAddress, reportStatus)" +
-                " values('"+pName+ "', '"+pAge+ "','"+pGender+ "','"+pWeight+ "','"+pHeight+ "','"+pMobile+ "', '"+pEmail+ "', '"+DateTime.Now+ "', '"+expectDate+ "', '"+reportID+ "', '"+reportName+ "', '"+reportType+ "', '"+reportPrice+ "', '"+hospitalID+ "', '"+hName+ "', '"+hEmail+"', '" + hAddress+ "', 'Pending Collect'");
+                " values('"+pName+ "', '"+pAge+ "','"+pGender+ "','"+pWeight+ "','"+pHeight+ "','"+pMobile+ "', '"+pEmail+ "', '"+DateTime.Now+ "', '"+expectDate+ "', '"+reportID+ "', '"+reportName+ "', '"+reportType+ "', '"+reportPrice+ "', '"+hospitalID+ "', '"+hName+ "', '"+hEmail+"', '" + hAddress+ "', 'Pending Collect')",con);
             cmd.ExecuteNonQuery();
         }
         public DataSet findHospital(String email)
@@ -75,6 +75,15 @@ namespace Master_2
             da = new SqlDataAdapter("SELECT * FROM report", con);
             ds = new DataSet();
             da.Fill(ds);
+            return ds;
+        }
+        public DataSet findReport(int id)
+        {
+            getcon();
+            da = new SqlDataAdapter("SELECT * from report where id='" + id + "'", con);
+            ds = new DataSet();
+            da.Fill(ds);
+
             return ds;
         }
     }

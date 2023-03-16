@@ -149,6 +149,7 @@
     <Content Include="assets\images\page-banner-bg.jpg" />
     <Content Include="assets\images\pagination-left-image.jpg" />
     <Content Include="assets\images\pagination-right-image.jpg" />
+    <Content Include="assets\images\reports.jpg" />
     <Content Include="assets\images\testimonial-author-01.jpg" />
     <Content Include="assets\images\testimonial-bg.png" />
     <Content Include="assets\images\trending-item-01.jpg" />

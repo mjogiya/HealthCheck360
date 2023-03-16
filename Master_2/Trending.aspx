@@ -47,207 +47,49 @@
                 <div class="row grid">
                     <div class="grid-sizer"></div>
 
-                    
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatLayout="Flow">
+                        <ItemTemplate>
+                            <div class="grid-item">
+                                <div class="trending-item">
+                                    <div class="thumb">
+                                        <span class="banner">
+                                            <asp:Label Text='<%# Eval("name") %>' runat="server" ID="Label1" /></span>
+                                        <div class="hover-effect">
+                                            <div class="inner-content">
+                                                <a href="">
+                                                    <h4>
+                                                        <asp:Label Text='<%# Eval("price") %>' runat="server" ID="priceLabel" />
+                                                    </h4>
+                                                    <br />
+                                                    <h4>
+                                                        <asp:Label Text='<%# Eval("category") %>' runat="server" ID="categoryLabel" />
+                                                    </h4>
+                                                </a>
+                                                <a class="icon" href="BookReport.aspx?rId=<%# Eval("id") %>">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                                    </svg></a>
+                                            </div>
+                                        </div>
+                                        <img src="assets/images/reports.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                           <%-- Id:
+                            <asp:Label Text='<%# Eval("Id") %>' runat="server" ID="IdLabel" /><br />
+                            name:
+                            <asp:Label Text='<%# Eval("name") %>' runat="server" ID="nameLabel" /><br />
+                            price:
+                            <asp:Label Text='<%# Eval("price") %>' runat="server" ID="priceLabel" /><br />
+                            category:
+                            <asp:Label Text='<%# Eval("category") %>' runat="server" ID="categoryLabel" /><br />
+                            <br />--%>
 
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Interior Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Minimal Design Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-01.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                        </ItemTemplate>
+                    </asp:DataList>
 
-
-
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Exterior Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Minimal Design Exterior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-03.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Bedroom Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Bedroom Design Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-02.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Little Bungalow</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Minimal Bungalow Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-04.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Tea Table Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Tea Table Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-05.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Interior Bed Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Minimal Bedroom Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-06.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">White Theme Interior</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>White Theme Bedroom</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-07.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Specific Interior Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Specific Design Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-08.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Another Interior Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Minimal Design Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-02.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Circle Mirror Room</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Circle Mirror Interior</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-01.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Exterior Decor</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Minimal Exterior Decor</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-04.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="trending-item">
-                            <div class="thumb">
-                                <span class="banner">Glass Table Design</span>
-                                <div class="hover-effect">
-                                    <div class="inner-content">
-                                        <a href="explore.html"><h4>Glass Table Design</h4></a>
-                                        <a class="icon" href="explore.html"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-                                        </svg></a>
-                                    </div>
-                                </div>
-                                <img src="assets/images/trending-item-05.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                  
+                    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [report]"></asp:SqlDataSource>
                 </div>
             </div>
         </div>
