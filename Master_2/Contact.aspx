@@ -66,7 +66,7 @@ https://templatemo.com/tm-572-designer
                         <li class="nav-item"><a class="nav-link" href="index.aspx">Homepage</a> </li>
                         <li class="nav-item"><a class="nav-link" href="About.aspx">About Us</a> </li>
                         <li class="nav-item"><a class="nav-link" href="Explore.aspx">Explore Work</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="Trending.aspx">Trending</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="Trending.aspx">Reports</a> </li>
                         <li class="nav-item"><a class="nav-link active" href="Contact.aspx">Contact Us</a> </li>
                         <% if (Session["user"] == null) { %>
                         <li class="nav-item"><a class="nav-link" href="/Sign-in-up/Login.aspx">Login/Register</a> </li>
