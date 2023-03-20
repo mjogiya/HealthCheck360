@@ -36,6 +36,9 @@
                     <div class="header-text">
                         <h2><em>Check</em> Trending Work</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod keoi tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="white-button">
+                            <a href="myReports.aspx">Your Reports</a>
+                        </div>
                     </div>
                 </div>
             </div>

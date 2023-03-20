@@ -177,6 +177,7 @@
     <Content Include="Contact.aspx" />
     <Content Include="Explore.aspx" />
     <Content Include="index.aspx" />
+    <Content Include="myReports.aspx" />
     <Content Include="Sign-in-up\css\main.css" />
     <Content Include="Sign-in-up\css\main.min.css" />
     <Content Include="Sign-in-up\js\global.js" />
@@ -305,6 +306,13 @@
     </Compile>
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="myReports.aspx.cs">
+      <DependentUpon>myReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myReports.aspx.designer.cs">
+      <DependentUpon>myReports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sign-in-up\Login.aspx.cs">
