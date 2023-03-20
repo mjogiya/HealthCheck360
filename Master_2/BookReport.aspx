@@ -142,7 +142,7 @@
                             <div class="name">Report Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="reportName" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="reportName" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                         <div class="value">
                             <div class="input-group">
                                 <div class="rs-select2 js-select-simple select--no-search">
-                                    <asp:DropDownList ID="reportType" runat="server" CssClass="input--style-5">
+                                    <asp:DropDownList ID="reportType" runat="server" CssClass="input--style-5" disabled>
                                         <asp:ListItem>Pathology</asp:ListItem>
                                         <asp:ListItem>Mammography</asp:ListItem>
                                         <asp:ListItem>Cardiology</asp:ListItem>
@@ -166,7 +166,7 @@
                             <div class="name">Report Price</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="reportPrice" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="reportPrice" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
                             <div class="name">Hospital Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="hName" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="hName" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -183,7 +183,7 @@
                             <div class="name">Hospital Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="hEmail" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="hEmail" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                                     </div>
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <asp:TextBox ID="hPhone" AutoCompleteType="Cellular" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                            <asp:TextBox ID="hPhone" AutoCompleteType="Cellular" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                     
                                             <label class="label--desc">Phone Number</label>
                                         </div>
@@ -211,7 +211,7 @@
                             <div class="name">Hospital Address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="hAddress" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="hAddress" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>

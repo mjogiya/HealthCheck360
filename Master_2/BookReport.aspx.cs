@@ -22,6 +22,7 @@ namespace Master_2
             hospitalID = HospitalData.Tables[0].Rows[0]["id"].ToString();
             hName.Text = HospitalData.Tables[0].Rows[0]["name"].ToString();
             hEmail.Text = HospitalData.Tables[0].Rows[0]["email"].ToString();
+            hPhone.Text = HospitalData.Tables[0].Rows[0]["phone"].ToString();
             hAddress.Text = HospitalData.Tables[0].Rows[0]["address"].ToString();
             reportName.Text = ReportData.Tables[0].Rows[0]["name"].ToString();
             reportPrice.Text = ReportData.Tables[0].Rows[0]["price"].ToString();
@@ -31,7 +32,7 @@ namespace Master_2
 
         protected void bookReport_Click(object sender, EventArgs e)
         {
-            c.addTestReport(pName.Text, pAge.Text, pGender.SelectedValue, pWeight.Text, pHeight.Text, pMobile.Text, pEmail.Text, expectDate.Text, reportID, reportName.Text, reportType.SelectedValue, reportPrice.Text, hospitalID, hName.Text, hEmail.Text, hAddress.Text);
+            c.addTestReport(pName.Text, pAge.Text, pGender.SelectedValue, pWeight.Text, pHeight.Text, pMobile.Text, pEmail.Text, expectDate.Text, reportID, reportName.Text, reportType.SelectedValue, reportPrice.Text, hospitalID, hName.Text, hEmail.Text, hPhone.Text, hAddress.Text);
         }
     }
 }

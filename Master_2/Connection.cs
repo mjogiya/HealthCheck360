@@ -53,11 +53,11 @@ namespace Master_2
             }
 
         }
-        public void addTestReport(String pName, String pAge, String pGender, String pWeight, String pHeight, String pMobile, String pEmail, String expectDate, String reportID, String reportName, String reportType, String reportPrice, String hospitalID, String hName, String hEmail, String hAddress)
+        public void addTestReport(String pName, String pAge, String pGender, String pWeight, String pHeight, String pMobile, String pEmail, String expectDate, String reportID, String reportName, String reportType, String reportPrice, String hospitalID, String hName, String hEmail, String hPhone, String hAddress)
         {
             getcon();
-            cmd = new SqlCommand("INSERT INTO tests (pName, pAge, pGender, pWeight, pHeight, pMobile, pEmail, Date, expectDate, reportID, reportName, reportType, reportPrice, hospitalID, hName, hEmail, hAddress, reportStatus)" +
-                " values('"+pName+ "', '"+pAge+ "','"+pGender+ "','"+pWeight+ "','"+pHeight+ "','"+pMobile+ "', '"+pEmail+ "', '"+DateTime.Now+ "', '"+expectDate+ "', '"+reportID+ "', '"+reportName+ "', '"+reportType+ "', '"+reportPrice+ "', '"+hospitalID+ "', '"+hName+ "', '"+hEmail+"', '" + hAddress+ "', 'Pending Collect')",con);
+            cmd = new SqlCommand("INSERT INTO tests (pName, pAge, pGender, pWeight, pHeight, pMobile, pEmail, Date, expectDate, reportID, reportName, reportType, reportPrice, hospitalID, hName, hEmail, hPhone, hAddress, reportStatus)" +
+                " values('"+pName+ "', '"+pAge+ "','"+pGender+ "','"+pWeight+ "','"+pHeight+ "','"+pMobile+ "', '"+pEmail+ "', '"+DateTime.Now+ "', '"+expectDate+ "', '"+reportID+ "', '"+reportName+ "', '"+reportType+ "', '"+reportPrice+ "', '"+hospitalID+ "', '"+hName+ "', '"+hEmail+"', '"+hPhone+"', '" + hAddress+ "', 'Pending Collect')",con);
             cmd.ExecuteNonQuery();
         }
         public DataSet findHospital(String email)
