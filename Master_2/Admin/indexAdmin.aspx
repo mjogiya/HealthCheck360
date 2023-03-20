@@ -47,7 +47,8 @@
       </rect>
     </svg>
   </div>
-     <% if (Session["admin"] != null) { %>
+     <% if (Session["admin"] != null)
+         { %>
     <form id="form1" runat="server">
         <div>
             <header id="#top">
@@ -62,6 +63,7 @@
                     
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" href="indexAdmin.aspx">Homepage</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="Tests.aspx">Tests</a> </li>
                         <li class="nav-item"><a class="nav-link" href="Hospitals.aspx">Hospitals</a> </li>
                         <li class="nav-item"><a class="nav-link" href="Reports.aspx">Reports</a> </li>
 
@@ -71,6 +73,24 @@
             </div>
         </nav>
     </header>
+
+             <div class="main-banner change-name">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="header-text">
+                        <h6>ADMIN</h6>
+                        <h2><em>HEALTH</em> CHECK 360</h2>
+                        <div class="white-button">
+                            <a href="Reports.aspx">Pending Work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
         </div>
     </form>
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -92,8 +112,13 @@
         return false;
     });
   </script>
-     <%} else { %>
-          Response.Redirect("./AdminLogin.aspx");   
-     <%} %>
+     <%
+         }
+         else
+         {
+             Response.Redirect("./AdminLogin.aspx");
+         }
+     %>
+           
 </body>
 </html>

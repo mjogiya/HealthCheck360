@@ -111,6 +111,9 @@
     <Content Include="Admin\js\global.js" />
     <Content Include="Admin\NewReport.aspx" />
     <Content Include="Admin\Reports.aspx" />
+    <Content Include="Admin\EditReport.aspx" />
+    <Content Include="Admin\Tests.aspx" />
+    <Content Include="Admin\UpdateTests.aspx" />
     <Content Include="Admin\vendor\bootstrap\css\bootstrap.min.css" />
     <Content Include="Admin\vendor\bootstrap\js\bootstrap.min.js" />
     <Content Include="Admin\vendor\datepicker\daterangepicker.css" />
@@ -145,6 +148,7 @@
     <Content Include="assets\images\explore-item-03.jpg" />
     <Content Include="assets\images\explore-work-left-image.jpg" />
     <Content Include="assets\images\footer-logo.png" />
+    <Content Include="assets\images\hospital.jpg" />
     <Content Include="assets\images\interior-design-left-image.jpg" />
     <Content Include="assets\images\page-banner-bg.jpg" />
     <Content Include="assets\images\pagination-left-image.jpg" />
@@ -244,6 +248,27 @@
     </Compile>
     <Compile Include="Admin\Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditReport.aspx.cs">
+      <DependentUpon>EditReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditReport.aspx.designer.cs">
+      <DependentUpon>EditReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Tests.aspx.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Tests.aspx.designer.cs">
+      <DependentUpon>Tests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UpdateTests.aspx.cs">
+      <DependentUpon>UpdateTests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UpdateTests.aspx.designer.cs">
+      <DependentUpon>UpdateTests.aspx</DependentUpon>
     </Compile>
     <Compile Include="BookReport.aspx.cs">
       <DependentUpon>BookReport.aspx</DependentUpon>
@@ -353,6 +378,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\PDFs\" />
     <Folder Include="Connection\" />
   </ItemGroup>
   <PropertyGroup>

@@ -14,7 +14,6 @@
 
     <!-- Title Page-->
     
-
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
@@ -89,7 +88,7 @@
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <asp:DropDownList ID="typeOfHos" runat="server">
+                                        <asp:DropDownList ID="typeOfHos" runat="server" CssClass="input--style-5">
                                             <asp:ListItem Enabled="true" Selected="True">Choose an option</asp:ListItem>
                                             <asp:ListItem>MultiSpeciality </asp:ListItem>
                                             <asp:ListItem>Clinic</asp:ListItem>
@@ -102,19 +101,7 @@
                                 </div>
                             </div>
                         </div>
-                        <%--<div class="form-row p-t-20">
-                            <label class="label label--block">Are you an existing customer?</label>
-                            <div class="p-t-15">
-                                <label class="radio-container m-r-55">Yes
-                                    <input type="radio" checked="checked" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">No
-                                    <input type="radio" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>--%>
+                       
                         <div class="form-row">
                             <div class="name">Address</div>
                             <div class="value">
@@ -134,6 +121,8 @@
                         <div>
                             <asp:Button ID="register" runat="server" Text="Register" CssClass="btn btn--radius-2 btn--red" OnClick="register_Click"/>
                         </div>
+                        <div><a class="nav-link" href="Login.aspx">Already have an Account ? Login HERE</a></div>
+
                     </form>
                 </div>
             </div>

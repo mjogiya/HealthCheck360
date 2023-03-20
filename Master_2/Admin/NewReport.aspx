@@ -60,7 +60,7 @@
       </rect>
     </svg>
   </div>
-     <%--<% if (Session["admin"] != null) { %>--%>
+     <% if (Session["admin"] != null) { %>
     <form id="form2" runat="server">
         <div>
             <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
@@ -140,9 +140,13 @@
         return false;
     });
   </script>
-    <%-- <%} else { %>
-          Response.Redirect("./AdminLogin.aspx");   
-     <%} %>--%>
+     <%
+         }
+         else
+         {
+             Response.Redirect("./AdminLogin.aspx");
+         }
+     %>
 
         </div>
    

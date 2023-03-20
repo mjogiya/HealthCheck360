@@ -147,18 +147,21 @@
                             </div>
                         </div>
                     
-                         <div class="form-row">
-                            <div class="name">Report Type</div>
-                            <div class="value">
-                                <div class="input-group">
+                    <div class="form-row">
+                        <div class="name">Report Type</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search">
                                     <asp:DropDownList ID="reportType" runat="server" CssClass="input--style-5">
                                         <asp:ListItem>Pathology</asp:ListItem>
                                         <asp:ListItem>Mammography</asp:ListItem>
                                         <asp:ListItem>Cardiology</asp:ListItem>
                                     </asp:DropDownList>
-                                    </div>
+                                    <div class="select-dropdown"></div>
+                                </div>
                             </div>
                         </div>
+                    </div>
                          <div class="form-row m-b-55">
                             <div class="name">Report Price</div>
                             <div class="value">
@@ -181,6 +184,26 @@
                             <div class="value">
                                 <div class="input-group">
                                     <asp:TextBox ID="hEmail" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" value="+91" disabled name="area_code">
+                                            <label class="label--desc">Country Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <asp:TextBox ID="hPhone" AutoCompleteType="Cellular" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

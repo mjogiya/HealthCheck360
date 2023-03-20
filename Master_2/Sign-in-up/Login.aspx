@@ -80,6 +80,7 @@
                         <div>
                             <asp:Button ID="Login" runat="server" Text="Login" CssClass="btn btn--radius-2 btn--red" OnClick="Login_Click" />
                         </div>
+                        <div><a class="nav-link" href="Register.aspx">New Hospital? Register HERE</a></div>
                     </form>
                 </div>
             </div>

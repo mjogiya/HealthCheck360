@@ -2,6 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content5" runat="server" contentplaceholderid="ContentPlaceHolder2">
+     <% if (Session["user"] != null) { %>
+
     <header id="#top">
         <nav class="main-navigation navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -75,15 +77,7 @@
                                     </div>
                                 </div>
                             </div>
-                           <%-- Id:
-                            <asp:Label Text='<%# Eval("Id") %>' runat="server" ID="IdLabel" /><br />
-                            name:
-                            <asp:Label Text='<%# Eval("name") %>' runat="server" ID="nameLabel" /><br />
-                            price:
-                            <asp:Label Text='<%# Eval("price") %>' runat="server" ID="priceLabel" /><br />
-                            category:
-                            <asp:Label Text='<%# Eval("category") %>' runat="server" ID="categoryLabel" /><br />
-                            <br />--%>
+                          
 
                         </ItemTemplate>
                     </asp:DataList>
@@ -110,5 +104,12 @@
             </div>
         </div>
     </section>
+    <%
+         }
+         else
+         {
+             Response.Redirect("./Sign-in-up/Login.aspx");
+         }
+     %>
 </asp:Content>
 

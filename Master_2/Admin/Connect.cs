@@ -42,5 +42,21 @@ namespace Master_2.Admin
             cmd = new SqlCommand("insert into report(name, price, category) values('" + name + "','" + price + "','" + category + "')", con);
             cmd.ExecuteNonQuery();
         }
+
+        public void updateReport(Int16 id, String name, String price, String category)
+        {
+            getcon();
+            cmd = new SqlCommand("update report set name='" + name + "', price='" + price + "', category='" + category + "' where id=" + id + "", con);
+            cmd.ExecuteNonQuery();
+        }
+        public DataSet findTest(Int16 id)
+        {
+            getcon();
+            da = new SqlDataAdapter("SELECT * from tests where id='" + id + "'", con);
+            ds = new DataSet();
+            da.Fill(ds);
+
+            return ds;
+        }
     }
 }
