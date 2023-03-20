@@ -17,9 +17,10 @@ namespace Master_2.Admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            TestData = ca.findTest(Convert.ToInt16(Request.QueryString["tId"]));
+            if (!IsPostBack)
             {
-                TestData = ca.findTest(Convert.ToInt16(Request.QueryString["tId"]));
+                
                 pName.Text = TestData.Tables[0].Rows[0]["pName"].ToString();
                 pAge.Text = TestData.Tables[0].Rows[0]["pAge"].ToString();
                 pGender.SelectedValue = TestData.Tables[0].Rows[0]["pGender"].ToString();
@@ -36,11 +37,8 @@ namespace Master_2.Admin
                 hPhone.Text = TestData.Tables[0].Rows[0]["hPhone"].ToString();
                 hAddress.Text = TestData.Tables[0].Rows[0]["hAddress"].ToString();
 
-
-
-
-
             }
+            testID = Convert.ToInt16(TestData.Tables[0].Rows[0]["Id"]);
         }
         void uploadfile()
         {
@@ -51,9 +49,7 @@ namespace Master_2.Admin
         protected void UpdateReport_Click(object sender, EventArgs e)
         {
             uploadfile();
-
-
-
+                ca.updateTest(testID, reportStatus.SelectedValue, reportURL, remarks.Text);
         }
     }
 }

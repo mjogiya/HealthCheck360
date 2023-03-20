@@ -58,5 +58,11 @@ namespace Master_2.Admin
 
             return ds;
         }
+        public void updateTest(Int16 id, String status, String filename, String remarks)
+        {
+            getcon();
+            cmd = new SqlCommand("update tests set reportStatus='" + status + "', reportFile='" + filename + "', Remarks='" + remarks + "' where id='" + id + "';",con);
+            cmd.ExecuteNonQuery();
+        }
     }
 }

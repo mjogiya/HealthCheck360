@@ -82,7 +82,7 @@
                         <h6>ADMIN</h6>
                         <h2><em>HEALTH</em> CHECK 360</h2>
                         <div class="white-button">
-                            <a href="Reports.aspx">Pending Work</a>
+                            <a href="Tests.aspx">Pending Work</a>
                         </div>
                     </div>
                 </div>

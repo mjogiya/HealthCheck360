@@ -75,7 +75,7 @@
                             <div class="name">Patient Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="pName" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="pName" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -83,14 +83,14 @@
                             <div class="name">Patient Age</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="pAge" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="pAge" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                      <div class="form-row m-b-55">
                             <div class="name">Patient Gender</div>
                             <div class="value">
-                                <asp:RadioButtonList ID="pGender" runat="server" CssClass="input--style-5" RepeatDirection="Horizontal">
+                                <asp:RadioButtonList ID="pGender" runat="server" CssClass="input--style-5" RepeatDirection="Horizontal" disabled>
                                     <asp:ListItem>Male</asp:ListItem>
                                     <asp:ListItem>Female</asp:ListItem>
                                 </asp:RadioButtonList>
@@ -103,7 +103,7 @@
                             <div class="name">Patient Weight</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="pWeight" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="pWeight" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                             <div class="name">Patient Height</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="pHeight" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="pHeight" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@
                             <div class="name">Patient Mobile</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="pMobile" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="pMobile" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +127,7 @@
                             <div class="name">Patient Email ID</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="pEmail" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="pEmail" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +136,7 @@
                             <div class="name">Expected Report Date</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="expectDate" CssClass="input--style-5" type="date" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="expectDate" CssClass="input--style-5" type="date" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +144,7 @@
                             <div class="name">Report Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="reportName" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="reportName" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
                         <div class="value">
                             <div class="input-group">
                                 <div class="rs-select2 js-select-simple select--no-search">
-                                    <asp:DropDownList ID="reportType" runat="server" CssClass="input--style-5">
+                                    <asp:DropDownList ID="reportType" runat="server" CssClass="input--style-5" disabled>
                                         <asp:ListItem>Pathology</asp:ListItem>
                                         <asp:ListItem>Mammography</asp:ListItem>
                                         <asp:ListItem>Cardiology</asp:ListItem>
@@ -168,7 +168,7 @@
                             <div class="name">Report Price</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="reportPrice" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="reportPrice" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +176,7 @@
                             <div class="name">Hospital Name</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="hName" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="hName" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -185,7 +185,7 @@
                             <div class="name">Hospital Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="hEmail" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="hEmail" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +201,7 @@
                                     </div>
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <asp:TextBox ID="hPhone" AutoCompleteType="Cellular" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                            <asp:TextBox ID="hPhone" AutoCompleteType="Cellular" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                     
                                             <label class="label--desc">Phone Number</label>
                                         </div>
@@ -213,7 +213,7 @@
                             <div class="name">Hospital Address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <asp:TextBox ID="hAddress" CssClass="input--style-5" runat="server" required></asp:TextBox>
+                                    <asp:TextBox ID="hAddress" CssClass="input--style-5" runat="server" required disabled></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                             <div class="value">
                                 <div class="input-group">
                                     <asp:FileUpload ID="reportFlie" runat="server" CssClass="ïnput--style-5"/>
-                                    <%--<asp:TextBox ID="TextBox1" CssClass="input--style-5" runat="server" required></asp:TextBox>--%>
+                                    
                                 </div>
                             </div>
                         </div>
