@@ -50,6 +50,7 @@ namespace Master_2.Admin
         {
             uploadfile();
                 ca.updateTest(testID, reportStatus.SelectedValue, reportURL, remarks.Text);
+            Response.Redirect("Tests.aspx");
         }
     }
 }

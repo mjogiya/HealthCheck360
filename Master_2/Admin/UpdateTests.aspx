@@ -234,7 +234,7 @@
                         </div>
                     </div>
                      <div class="form-row m-b-55">
-                            <div class="name">Hospital Address</div>
+                            <div class="name">Report</div>
                             <div class="value">
                                 <div class="input-group">
                                     <asp:FileUpload ID="reportFlie" runat="server" CssClass="ïnput--style-5"/>

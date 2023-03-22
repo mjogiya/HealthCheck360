@@ -20,7 +20,7 @@
                         <% if (Session["user"] == null) { %>
                         <li class="nav-item"><a class="nav-link" href="/Sign-in-up/Login.aspx">Login/Register</a> </li>
                         <%} else { %>
-                         <li class="nav-item"><a class="nav-link" href=""><%= Session["user"].ToString() %></a> </li>
+                         <li class="nav-item"><a class="nav-link" href="Logout.aspx"><%= Session["user"].ToString() %></a> </li>
                         <%} %>
                     </ul>
                 </div>
@@ -33,7 +33,7 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="header-text">
                         <h2><em>Explore</em> Our Work</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod keoi tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>There is a great variety of lab skills depending on your scientific field. Some lab skills include creating a hypothesis, record keeping, dissection, pipetting, measuring, lab safety, molecular cloning and the ability to sterilize equipment.</p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Minimalistic Design for 2 bedrooms</h2>
+                        <h2>Minimalistic Reports for Pathalogy</h2>
                     </div>
                     <div class="main-image">                   
                         <img src="assets/images/explore-item-01.jpg" alt="master bedroom design">
@@ -114,8 +114,8 @@
                                 <div class="left-pagination">
                                     <img class="float-start" src="assets/images/pagination-left-image.jpg" alt="">
                                     <div class="right-content">
-                                        <a href="Explore.aspx"><h6>Minimalistic Living Room</h6></a>
-                                        <span>Interior Design</span>
+                                        <a href="Explore.aspx"><h6>Minimalistic Reports</h6></a>
+                                        <span>Pathalogy</span>
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +123,8 @@
                                 <div class="right-pagination">
                                     <img class="float-end" src="assets/images/pagination-right-image.jpg" alt="">
                                     <div class="float-end left-content">
-                                        <a href="Explore.aspx"><h6>Futuristic Interior Concept</h6></a>
-                                        <span>Interior Design</span>
+                                        <a href="Explore.aspx"><h6>Futuristic equipments</h6></a>
+                                        <span>From U.S.A</span>
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="white-button">
-                        <a href="">Contact Us Now</a>
+                        <a href="Contact.aspx">Contact Us Now</a>
                     </div>
                 </div>
             </div>

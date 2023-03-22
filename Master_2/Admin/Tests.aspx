@@ -63,7 +63,7 @@
                         <li class="nav-item"><a class="nav-link active" href="Tests.aspx">Tests</a> </li>
                         <li class="nav-item"><a class="nav-link" href="Hospitals.aspx">Hospitals</a> </li>
                         <li class="nav-item"><a class="nav-link" href="Reports.aspx">Reports</a> </li>
-                        <li class="nav-item"><a class="nav-link" href="NewReport.aspx">Add New Report</a> </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -89,10 +89,10 @@
                 <div class="row grid">
                     <div class="grid-sizer"></div>
 
-                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="TestDatalist" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatLayout="Flow">
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="TestDatalist" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatDirection="Horizontal">
                         <ItemTemplate>
                             
-                            <div class="grid-item">
+                            <div class="grid-item  w-100 m-3">
                                 <div class="trending-item">
                                     <div class="thumb">
                                         <span class="banner">

@@ -92,10 +92,10 @@
                 <div class="row grid">
                     <div class="grid-sizer"></div>
 
-                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="ReportsDatalist" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatLayout="Flow">
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="ReportsDatalist" RepeatColumns="2" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatDirection="Horizontal">
                         <ItemTemplate>
 
-                            <div class="grid-item">
+                            <div class="grid-item  w-75 m-3">
                                 <div class="trending-item">
                                     <div class="thumb">
                                         <span class="banner">

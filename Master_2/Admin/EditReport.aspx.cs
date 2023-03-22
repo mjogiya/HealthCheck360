@@ -31,6 +31,7 @@ namespace Master_2.Admin
         protected void UpdateReport_Click(object sender, EventArgs e)
         {
             ca.updateReport(reportID, repName.Text, repPrice.Text, repType.SelectedValue);
+            Response.Redirect("Tests.aspx");
 
         }
     }

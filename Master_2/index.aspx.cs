@@ -14,5 +14,9 @@ namespace Master_2
 
         }
 
+        protected void SearchReportbtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Trending.aspx");
+        }
     }
 }

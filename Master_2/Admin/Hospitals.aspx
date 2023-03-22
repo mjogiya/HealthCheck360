@@ -92,9 +92,9 @@
                 <div class="row grid">
                     <div class="grid-sizer"></div>
 
-                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="HospitalDatalist" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatLayout="Flow">
+                    <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="HospitalDatalist" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatDirection="Horizontal">
                         <ItemTemplate>
-                             <div class="grid-item">
+                             <div class="grid-item w-75 m-3">
                                 <div class="trending-item">
                                     <div class="thumb">
                                         <span class="banner">
@@ -110,7 +110,7 @@
                                                         <asp:Label Text='<%# Eval("typeOfHospital") %>' runat="server" ID="categoryLabel" />
                                                     </h4>
                                                 </a>
-                                                <a class="icon" href="BookReport.aspx?rId=<%# Eval("id") %>">
+                                                <a class="icon" href="#">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                                         <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
                                                     </svg></a>

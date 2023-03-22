@@ -20,7 +20,7 @@
                         <% if (Session["user"] == null) { %>
                         <li class="nav-item"><a class="nav-link" href="/Sign-in-up/Login.aspx">Login/Register</a> </li>
                         <%} else { %>
-                         <li class="nav-item"><a class="nav-link" href=""><%= Session["user"].ToString() %></a> </li>
+                         <li class="nav-item"><a class="nav-link" href="Logout.aspx"><%= Session["user"].ToString() %></a> </li>
                         <%} %>
                         
                     </ul>
@@ -34,7 +34,7 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="header-text">
                         <h2><em>About</em> HealthCheck360</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod keoi tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>A laboratory is a facility that provides controlled conditions in which scientific or technological research, experiments, and measurement may be performed.</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
                     <div class="right-content">
                         <p>Designer HTML5 Template is 100% free to download provided by TemplateMo website. You are allowed to use this template for your commercial or business websites. You are <strong>NOT allowed</strong> to redistribute the downloadable ZIP file of this template on any other website. Please contact us for more info.
                         
-                        <br><br>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <br><br></p>
                         <div class="accordion" id="accordionExample">
                             <h4>How It Works</h4>
                             <div class="accordion-item">
@@ -94,31 +94,31 @@
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                <p>Medical laboratory scientists perform complex tests on patient samples using sophisticated equipment like microscopes. The data they find plays an important role in identifying and treating cancer, heart disease, diabetes, and other medical conditions. <strong>sed do eiusmod tempor incididunt ut labore</strong> et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ai accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p>Medical laboratory scientists perform complex tests on patient samples using sophisticated equipment like microscopes. The data they find plays an important role in identifying and treating cancer, heart disease, diabetes, and other medical conditions.</p>
                                 </div>
                             </div>
                             </div>
                             <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    What is Exterior Decoration?
+                                    What is Pathlogy Reports?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ai accumsan <strong>lacus vel cilisis lorem ipsum dolor sit amet</strong>, consectetur adipiscingii elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p>A pathology report (sometimes called a surgical pathology report) is a medical report that describes the characteristics of a tissue specimen that is taken from a patient.</p>
                                 </div>
                             </div>
                             </div>
                             <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    3D Rendering Models
+                                    what is mammography report?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas ai accumsan lacus vel cilisis lorem ipsum dolor sit amet, consectetur adipiscingii elit, <strong>sed do eiusmod tempor incididunt ut labore et dolore</strong> magna aliqua.</p>
+                                    <p>A mammogram is an X-ray picture of the breast. Doctors use a mammogram to look for early signs of breast cancer. Regular mammograms are the best tests doctors have to find breast cancer early, sometimes up to three years before it can be felt..</p>
                                 </div>
                             </div>
                             </div>
@@ -228,7 +228,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="white-button">
-                        <a href="">Contact Us Now</a>
+                        <a href="Contact.aspx">Contact Us Now</a>
                     </div>
                 </div>
             </div>

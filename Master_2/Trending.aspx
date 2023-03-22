@@ -22,7 +22,7 @@
                         <% if (Session["user"] == null) { %>
                         <li class="nav-item"><a class="nav-link" href="/Sign-in-up/Login.aspx">Login/Register</a> </li>
                         <%} else { %>
-                         <li class="nav-item"><a class="nav-link" href=""><%= Session["user"].ToString() %></a> </li>
+                         <li class="nav-item"><a class="nav-link" href="Logout.aspx"><%= Session["user"].ToString() %></a> </li>
                         <%} %>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@
 
                     <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1" RepeatColumns="3" ShowFooter="False" ShowHeader="False" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" RepeatLayout="Flow">
                         <ItemTemplate>
-                            <div class="grid-item">
+                            <div class="grid-item  w-75 m-3">
                                 <div class="trending-item">
                                     <div class="thumb">
                                         <span class="banner">
@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="white-button">
-                        <a href="#">Contact Us Now</a>
+                        <a href="Contact.aspx">Contact Us Now</a>
                     </div>
                 </div>
             </div>
