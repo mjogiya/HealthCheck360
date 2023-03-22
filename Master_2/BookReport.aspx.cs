@@ -33,6 +33,7 @@ namespace Master_2
         protected void bookReport_Click(object sender, EventArgs e)
         {
             c.addTestReport(pName.Text, pAge.Text, pGender.SelectedValue, pWeight.Text, pHeight.Text, pMobile.Text, pEmail.Text, expectDate.Text, reportID, reportName.Text, reportType.SelectedValue, reportPrice.Text, hospitalID, hName.Text, hEmail.Text, hPhone.Text, hAddress.Text);
+            Response.Redirect("Trending.aspx");
         }
     }
 }

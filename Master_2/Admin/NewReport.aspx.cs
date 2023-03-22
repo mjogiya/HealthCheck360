@@ -19,6 +19,7 @@ namespace Master_2.Admin
         {
             c.addReport(repName.Text, repPrice.Text, repType.SelectedValue);
             Response.Write("<script>alert('Report Added Successfully')</script>");
+            Response.Redirect("Reports.aspx");
         }
     }
 }
